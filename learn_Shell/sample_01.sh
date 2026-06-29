@@ -1,0 +1,5 @@
+ls -ltr
+
+pwd
+
+hostname
