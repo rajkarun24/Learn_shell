@@ -11,7 +11,7 @@ fi
 
 percent=$(curl -s https://www.themoviedb.org/movie/$input | grep data-percent | xargs -n1 | grep data-percent | awk -F = '{print $2}')
 
-if [ "$percent" -gt 70]; then
+if [ "$percent" -ge 70]; then
   echo Good
 else
   echo average
